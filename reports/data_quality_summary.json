@@ -1,0 +1,77 @@
+{
+  "overview": {
+    "sales_shape_raw": [
+      30490,
+      1919
+    ],
+    "calendar_shape_raw": [
+      1969,
+      14
+    ],
+    "prices_shape_raw": [
+      6841121,
+      4
+    ],
+    "final_shape": [
+      1901730,
+      18
+    ],
+    "final_n_unique_series": 1000,
+    "final_date_range": [
+      "2011-01-29 00:00:00",
+      "2016-04-24 00:00:00"
+    ],
+    "csv_size_mb": 218.8,
+    "parquet_size_mb": 2.3
+  },
+  "missing_values": {
+    "sales_raw": {},
+    "calendar_raw": {
+      "event_name_1": {
+        "n_missing": 1807,
+        "pct_missing": 91.77
+      },
+      "event_type_1": {
+        "n_missing": 1807,
+        "pct_missing": 91.77
+      },
+      "event_name_2": {
+        "n_missing": 1964,
+        "pct_missing": 99.75
+      },
+      "event_type_2": {
+        "n_missing": 1964,
+        "pct_missing": 99.75
+      }
+    },
+    "prices_raw": {},
+    "sell_price_missing_pre_launch": {
+      "n_missing": 12299413,
+      "pct_missing": 21.09
+    }
+  },
+  "duplicates": {
+    "sales_raw": 0,
+    "calendar_raw": 0,
+    "prices_raw": 0
+  },
+  "format_inconsistencies": {
+    "details": {
+      "calendar_non_iso_dates": [],
+      "prices_non_numeric_count": 0
+    }
+  },
+  "cleaning_actions": {
+    "calendar_duplicates_removed": 0,
+    "calendar_dates_unparseable": 0,
+    "prices_duplicates_removed": 0,
+    "prices_unparseable_after_cleaning": 0,
+    "sales_duplicates_removed": 0,
+    "negative_sales_clipped_to_zero": 0,
+    "pre_launch_rows_trimmed": 12299413
+  },
+  "outliers": {
+    "negative_sales_count": 0,
+    "spike_count_z_gt_4": 536955
+  }
+}

@@ -3,6 +3,7 @@ data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+!data/processed/*.parquet
 
 # Python
 __pycache__/
