@@ -154,5 +154,3 @@ print(f"Spikes on a known calendar event day: {(spikes['event_name_1'] != 'none'
 print(f"Spikes on a SNAP day (CA or TX): {((spikes['snap_CA']==1)|(spikes['snap_TX']==1)).sum():,}")
 print(f"Spikes explained by event OR SNAP: {explained.sum():,} ({explained.mean()*100:.1f}%)")
 print(f"Spikes with NO identified explanation: {(~explained).sum():,} ({(1-explained.mean())*100:.1f}%)")
-
- 
